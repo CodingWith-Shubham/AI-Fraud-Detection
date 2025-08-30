@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+💳 AI-Powered Fraud Detection System
+📌 Problem Statement
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Online payment systems face a major challenge: fraudulent transactions such as fake accounts, stolen credit cards, phishing, and abnormal user behavior. Companies like SabPaisa, which process large volumes of digital payments daily, need to ensure secure and reliable transactions for their customers.
 
-## Available Scripts
+Currently, most fraud detection relies on rule-based systems (e.g., blocking based on amount, location, or repeated attempts). However, fraudsters continuously evolve and find ways around these fixed rules. This leads to two major problems:
 
-In the project directory, you can run:
+False Positives – Genuine users’ transactions get blocked.
 
-### `npm start`
+False Negatives – Fraudulent transactions go undetected.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🎯 Goal
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To develop an AI/ML-based Fraud Detection System that can:
 
-### `npm test`
+✅ Detect suspicious transactions in real-time by analyzing patterns.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✅ Learn from historical data to improve detection over time.
 
-### `npm run build`
+✅ Reduce false positives & negatives compared to rule-based systems.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+✅ Alert admins instantly for suspicious activity.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⚙️ Key Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Transaction Monitoring – Analyze factors like amount, frequency, device ID, geolocation, and time.
 
-### `npm run eject`
+Anomaly Detection – Identify unusual patterns (e.g., sudden large transfers, login from new country).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+User Behavior Profiling – Build a normal behavior profile for each user and flag deviations.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+AI/ML Models – Use supervised learning (classification) + unsupervised learning (clustering/anomaly detection).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Admin Dashboard – Show alerts, fraud scores, and transaction insights.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🛠 Tech Stack (Example)
 
-## Learn More
+Backend: Python (Flask / FastAPI)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ML Models: Logistic Regression, Random Forest, XGBoost, Isolation Forest, Neural Networks
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Database: PostgreSQL / MongoDB
 
-### Code Splitting
+Frontend: React + TailwindCSS (for dashboard)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Deployment: Docker + Cloud (AWS / Azure)
 
-### Analyzing the Bundle Size
+📊 Example Use Cases
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+A user usually pays ₹500–₹1000 per day. Suddenly, a ₹50,000 transfer request is made → Flagged as suspicious.
 
-### Making a Progressive Web App
+Login attempt from two countries within 10 minutes → Possible stolen credentials.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Multiple failed payment attempts using different cards → Possible card testing attack.

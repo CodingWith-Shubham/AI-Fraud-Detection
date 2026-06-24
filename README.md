@@ -1,5 +1,5 @@
-💳 AI-Powered Fraud Detection System
-📌 Problem Statement
+- AI-Powered Fraud Detection System
+- Problem Statement
 
 Online payment systems face a major challenge: fraudulent transactions such as fake accounts, stolen credit cards, phishing, and abnormal user behavior. Companies like SabPaisa, which process large volumes of digital payments daily, need to ensure secure and reliable transactions for their customers.
 
@@ -9,17 +9,17 @@ False Positives – Genuine users’ transactions get blocked.
 
 False Negatives – Fraudulent transactions go undetected.
 
-🎯 Goal
+- Goal
 
 To develop an AI/ML-based Fraud Detection System that can:
 
-✅ Detect suspicious transactions in real-time by analyzing patterns.
+- Detect suspicious transactions in real-time by analyzing patterns.
 
-✅ Learn from historical data to improve detection over time.
+- Learn from historical data to improve detection over time.
 
-✅ Reduce false positives & negatives compared to rule-based systems.
+- Reduce false positives & negatives compared to rule-based systems.
 
-✅ Alert admins instantly for suspicious activity.
+- Alert admins instantly for suspicious activity.
 
 ⚙️ Key Features
 
